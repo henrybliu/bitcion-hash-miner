@@ -1,0 +1,256 @@
+# Reading pref.tcl
+# do sha_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+L:/Desktop/ECE111/FinalPt1/FinalV4 {L:/Desktop/ECE111/FinalPt1/FinalV4/simplified_sha256.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:08:24 on Dec 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+L:/Desktop/ECE111/FinalPt1/FinalV4" L:/Desktop/ECE111/FinalPt1/FinalV4/simplified_sha256.sv 
+# -- Compiling module simplified_sha256
+# 
+# Top level modules:
+# 	simplified_sha256
+# End time: 00:08:24 on Dec 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_20w.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:09:44 on Dec 13,2023
+# vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_20w.sv 
+# -- Compiling module tb_simplified_sha256_20w
+# 
+# Top level modules:
+# 	tb_simplified_sha256_20w
+# End time: 00:09:44 on Dec 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_30w.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:09:44 on Dec 13,2023
+# vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_30w.sv 
+# -- Compiling module tb_simplified_sha256_30w
+# 
+# Top level modules:
+# 	tb_simplified_sha256_30w
+# End time: 00:09:44 on Dec 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_40w.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:09:44 on Dec 13,2023
+# vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_40w.sv 
+# -- Compiling module tb_simplified_sha256_40w
+# 
+# Top level modules:
+# 	tb_simplified_sha256_40w
+# End time: 00:09:45 on Dec 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.tb_simplified_sha256_20w
+# vsim work.tb_simplified_sha256_20w 
+# Start time: 00:09:50 on Dec 13,2023
+# Loading sv_std.std
+# Loading work.tb_simplified_sha256_20w
+# Loading work.simplified_sha256
+add wave -position insertpoint sim:/tb_simplified_sha256_20w/*
+run -all
+# --------
+# MESSAGE:
+# --------
+# 01234675
+# 02468cea
+# 048d19d4
+# 091a33a8
+# 12346750
+# 2468cea0
+# 48d19d40
+# 91a33a80
+# 23467501
+# 468cea02
+# 8d19d404
+# 1a33a809
+# 34675012
+# 68cea024
+# d19d4048
+# a33a8091
+# 46750123
+# 8cea0246
+# 19d4048d
+# 33a8091a
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = 5b8feb0a	Your H[0] = 5b8feb0a
+# Correct H[1] = d258a227	Your H[1] = d258a227
+# Correct H[2] = 116df790	Your H[2] = 116df790
+# Correct H[3] = 66c9d8cc	Your H[3] = 66c9d8cc
+# Correct H[4] = 47e75276	Your H[4] = 47e75276
+# Correct H[5] = a5316e2f	Your H[5] = a5316e2f
+# Correct H[6] = d1965a81	Your H[6] = d1965a81
+# Correct H[7] = 5904edff	Your H[7] = 5904edff
+# ***************************
+# 
+# CONGRATULATIONS! All your hash results are correct!
+# 
+# Total number of cycles:         178
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_20w.sv(231)
+#    Time: 3610 ps  Iteration: 2  Instance: /tb_simplified_sha256_20w
+# Break in Module tb_simplified_sha256_20w at L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_20w.sv line 231
+vsim work.tb_simplified_sha256_30w
+# End time: 00:13:01 on Dec 13,2023, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 0
+# vsim work.tb_simplified_sha256_30w 
+# Start time: 00:13:01 on Dec 13,2023
+# Loading sv_std.std
+# Loading work.tb_simplified_sha256_30w
+# Loading work.simplified_sha256
+add wave -position insertpoint sim:/tb_simplified_sha256_30w/*
+run -all
+# --------
+# MESSAGE:
+# --------
+# 01234675
+# 02468cea
+# 048d19d4
+# 091a33a8
+# 12346750
+# 2468cea0
+# 48d19d40
+# 91a33a80
+# 23467501
+# 468cea02
+# 8d19d404
+# 1a33a809
+# 34675012
+# 68cea024
+# d19d4048
+# a33a8091
+# 46750123
+# 8cea0246
+# 19d4048d
+# 33a8091a
+# 67501234
+# cea02468
+# 9d4048d1
+# 3a8091a3
+# 75012346
+# ea02468c
+# d4048d19
+# a8091a33
+# 50123467
+# a02468ce
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = abde57db	Your H[0] = abde57db
+# Correct H[1] = fb3f1bda	Your H[1] = fb3f1bda
+# Correct H[2] = 6c6f969c	Your H[2] = 6c6f969c
+# Correct H[3] = 6bdea244	Your H[3] = 6bdea244
+# Correct H[4] = 8d5ff7cf	Your H[4] = 8d5ff7cf
+# Correct H[5] = 6d41389a	Your H[5] = 6d41389a
+# Correct H[6] = f85598ec	Your H[6] = f85598ec
+# Correct H[7] = 9b97ccc1	Your H[7] = 9b97ccc1
+# ***************************
+# 
+# CONGRATULATIONS! All your hash results are correct!
+# 
+# Total number of cycles:         245
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_30w.sv(232)
+#    Time: 4950 ps  Iteration: 2  Instance: /tb_simplified_sha256_30w
+# Break in Module tb_simplified_sha256_30w at L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_30w.sv line 232
+vsim work.tb_simplified_sha256_40w
+# End time: 00:17:10 on Dec 13,2023, Elapsed time: 0:04:09
+# Errors: 0, Warnings: 0
+# vsim work.tb_simplified_sha256_40w 
+# Start time: 00:17:10 on Dec 13,2023
+# Loading sv_std.std
+# Loading work.tb_simplified_sha256_40w
+# Loading work.simplified_sha256
+add wave -position insertpoint sim:/tb_simplified_sha256_40w/*
+run -all
+# --------
+# MESSAGE:
+# --------
+# 01234675
+# 02468cea
+# 048d19d4
+# 091a33a8
+# 12346750
+# 2468cea0
+# 48d19d40
+# 91a33a80
+# 23467501
+# 468cea02
+# 8d19d404
+# 1a33a809
+# 34675012
+# 68cea024
+# d19d4048
+# a33a8091
+# 46750123
+# 8cea0246
+# 19d4048d
+# 33a8091a
+# 67501234
+# cea02468
+# 9d4048d1
+# 3a8091a3
+# 75012346
+# ea02468c
+# d4048d19
+# a8091a33
+# 50123467
+# a02468ce
+# 4048d19d
+# 8091a33a
+# 01234675
+# 02468cea
+# 048d19d4
+# 091a33a8
+# 12346750
+# 2468cea0
+# 48d19d40
+# 91a33a80
+# ***************************
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H[0] = 0244238c	Your H[0] = 0244238c
+# Correct H[1] = d2a3d7be	Your H[1] = d2a3d7be
+# Correct H[2] = 63ad61e7	Your H[2] = 63ad61e7
+# Correct H[3] = 44f2fad8	Your H[3] = 44f2fad8
+# Correct H[4] = f0da0c1b	Your H[4] = f0da0c1b
+# Correct H[5] = 10d16d52	Your H[5] = 10d16d52
+# Correct H[6] = 86e5e36d	Your H[6] = 86e5e36d
+# Correct H[7] = a108b1c4	Your H[7] = a108b1c4
+# ***************************
+# 
+# CONGRATULATIONS! All your hash results are correct!
+# 
+# Total number of cycles:         261
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_40w.sv(231)
+#    Time: 5270 ps  Iteration: 2  Instance: /tb_simplified_sha256_40w
+# Break in Module tb_simplified_sha256_40w at L:/Desktop/ECE111/FinalPt1/FinalV4/tb_simplified_sha256_40w.sv line 231
+set PrefMain(file) 40w
