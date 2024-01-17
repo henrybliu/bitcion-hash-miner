@@ -1,0 +1,1132 @@
+# Reading pref.tcl
+# do bitcoin_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+L:/Desktop/ECE111/FinalPt2/V2 {L:/Desktop/ECE111/FinalPt2/V2/bitcoin_hash.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:39:39 on Dec 12,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+L:/Desktop/ECE111/FinalPt2/V2" L:/Desktop/ECE111/FinalPt2/V2/bitcoin_hash.sv 
+# -- Compiling module bitcoin_hash
+# 
+# Top level modules:
+# 	bitcoin_hash
+# End time: 23:39:40 on Dec 12,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt2/V2/tb_bitcoin_hash.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:46:39 on Dec 12,2023
+# vlog -reportprogress 300 -work work L:/Desktop/ECE111/FinalPt2/V2/tb_bitcoin_hash.sv 
+# -- Compiling module tb_bitcoin_hash
+# 
+# Top level modules:
+# 	tb_bitcoin_hash
+# End time: 23:46:39 on Dec 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_bitcoin_hash
+# vsim work.tb_bitcoin_hash 
+# Start time: 23:46:45 on Dec 12,2023
+# Loading sv_std.std
+# Loading work.tb_bitcoin_hash
+# Loading work.bitcoin_hash
+vsim work.tb_bitcoin_hash
+# End time: 23:46:52 on Dec 12,2023, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim work.tb_bitcoin_hash 
+# Start time: 23:46:52 on Dec 12,2023
+# Loading sv_std.std
+# Loading work.tb_bitcoin_hash
+# Loading work.bitcoin_hash
+add wave -position insertpoint sim:/tb_bitcoin_hash/bitcoin_hash_inst/*
+run -all
+# IDLE
+# 
+# IDLE
+# 
+# ---------------
+# 19 WORD HEADER:
+# ---------------
+# 01234675
+# 02468cea
+# 048d19d4
+# 091a33a8
+# 12346750
+# 2468cea0
+# 48d19d40
+# 91a33a80
+# 23467501
+# 468cea02
+# 8d19d404
+# 1a33a809
+# 34675012
+# 68cea024
+# d19d4048
+# a33a8091
+# 46750123
+# 8cea0246
+# 19d4048d
+# ***************************
+# 
+# IDLE
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# j is 17-20
+# 
+# READ
+# 
+# j is 17-20
+# 
+# READ
+# 
+# j is 17-20
+# 
+# READ
+# 
+# BLOCK1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# BLOCK2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# PROCESS
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H0[ 0] = a0211662	Your H0[ 0] = a0211662
+# Correct H0[ 1] = bfbb6ccd	Your H0[ 1] = bfbb6ccd
+# Correct H0[ 2] = da017047	Your H0[ 2] = da017047
+# Correct H0[ 3] = 1c34e2aa	Your H0[ 3] = 1c34e2aa
+# Correct H0[ 4] = 58993aea	Your H0[ 4] = 58993aea
+# Correct H0[ 5] = b41b7a67	Your H0[ 5] = b41b7a67
+# Correct H0[ 6] = 04cf2ceb	Your H0[ 6] = 04cf2ceb
+# Correct H0[ 7] = 85ab3945	Your H0[ 7] = 85ab3945
+# Correct H0[ 8] = f4539616	Your H0[ 8] = f4539616
+# Correct H0[ 9] = 0e4614d7	Your H0[ 9] = 0e4614d7
+# Correct H0[10] = 6bec8208	Your H0[10] = 6bec8208
+# Correct H0[11] = ce75ecf2	Your H0[11] = ce75ecf2
+# Correct H0[12] = 672cb1a0	Your H0[12] = 672cb1a0
+# Correct H0[13] = 4d48232a	Your H0[13] = 4d48232a
+# Correct H0[14] = cfe99db3	Your H0[14] = cfe99db3
+# Correct H0[15] = 047d81b9	Your H0[15] = 047d81b9
+# ***************************
+# 
+# CONGRATULATIONS! All your hash results are correct!
+# 
+# Total number of cycles:         239
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : L:/Desktop/ECE111/FinalPt2/V2/tb_bitcoin_hash.sv(334)
+#    Time: 4830 ps  Iteration: 2  Instance: /tb_bitcoin_hash
+# Break in Module tb_bitcoin_hash at L:/Desktop/ECE111/FinalPt2/V2/tb_bitcoin_hash.sv line 334
+restart -f
+add wave -position insertpoint sim:/tb_bitcoin_hash/*
+run -all
+# IDLE
+# 
+# IDLE
+# 
+# ---------------
+# 19 WORD HEADER:
+# ---------------
+# 01234675
+# 02468cea
+# 048d19d4
+# 091a33a8
+# 12346750
+# 2468cea0
+# 48d19d40
+# 91a33a80
+# 23467501
+# 468cea02
+# 8d19d404
+# 1a33a809
+# 34675012
+# 68cea024
+# d19d4048
+# a33a8091
+# 46750123
+# 8cea0246
+# 19d4048d
+# ***************************
+# 
+# IDLE
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# READ
+# 
+# j is 17-20
+# 
+# READ
+# 
+# j is 17-20
+# 
+# READ
+# 
+# j is 17-20
+# 
+# READ
+# 
+# BLOCK1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# COMPUTE1
+# 
+# BLOCK2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# COMPUTE2
+# 
+# PROCESS
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# COMPUTE3
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# WRITE
+# 
+# ---------------------
+# COMPARE HASH RESULTS:
+# ---------------------
+# Correct H0[ 0] = a0211662	Your H0[ 0] = a0211662
+# Correct H0[ 1] = bfbb6ccd	Your H0[ 1] = bfbb6ccd
+# Correct H0[ 2] = da017047	Your H0[ 2] = da017047
+# Correct H0[ 3] = 1c34e2aa	Your H0[ 3] = 1c34e2aa
+# Correct H0[ 4] = 58993aea	Your H0[ 4] = 58993aea
+# Correct H0[ 5] = b41b7a67	Your H0[ 5] = b41b7a67
+# Correct H0[ 6] = 04cf2ceb	Your H0[ 6] = 04cf2ceb
+# Correct H0[ 7] = 85ab3945	Your H0[ 7] = 85ab3945
+# Correct H0[ 8] = f4539616	Your H0[ 8] = f4539616
+# Correct H0[ 9] = 0e4614d7	Your H0[ 9] = 0e4614d7
+# Correct H0[10] = 6bec8208	Your H0[10] = 6bec8208
+# Correct H0[11] = ce75ecf2	Your H0[11] = ce75ecf2
+# Correct H0[12] = 672cb1a0	Your H0[12] = 672cb1a0
+# Correct H0[13] = 4d48232a	Your H0[13] = 4d48232a
+# Correct H0[14] = cfe99db3	Your H0[14] = cfe99db3
+# Correct H0[15] = 047d81b9	Your H0[15] = 047d81b9
+# ***************************
+# 
+# CONGRATULATIONS! All your hash results are correct!
+# 
+# Total number of cycles:         239
+# 
+# 
+# ***************************
+# 
+# ** Note: $stop    : L:/Desktop/ECE111/FinalPt2/V2/tb_bitcoin_hash.sv(334)
+#    Time: 4830 ps  Iteration: 2  Instance: /tb_bitcoin_hash
+# Break in Module tb_bitcoin_hash at L:/Desktop/ECE111/FinalPt2/V2/tb_bitcoin_hash.sv line 334
+# End time: 23:57:57 on Dec 12,2023, Elapsed time: 0:11:05
+# Errors: 0, Warnings: 0
